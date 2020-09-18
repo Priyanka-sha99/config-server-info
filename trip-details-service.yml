@@ -1,14 +1,6 @@
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    show-sql: true
-      
-      
- 
-  datasource:
-    url: jdbc:mysql://localhost:3306/HsbcTraining-SpringBootJPA
-    username: root
-    password:
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
